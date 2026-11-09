@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FLIPDEMON Community</title>
+<meta name="description" content="Join the free FLIPDEMON HFT BOT community on Telegram.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap">
+
+<!-- Meta Pixel Code: replace YOUR_PIXEL_ID (both places) with your Pixel ID from Events Manager -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'YOUR_PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" alt=""></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+:root {
+  --bg: #0b0f19;
+  --card: #0f1525;
+  --edge: #1f2a44;
+  --text: #f5f8ff;
+  --muted: #8b97b5;
+  --blue: #2c6bff;
+  --cyan: #3de3d2;
+  --font-body: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-accent: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  color-scheme: dark;
+}
+html { background: var(--bg); }
+html, body { min-height: 100%; }
+body {
+  margin: 0;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 70% 45% at 50% 0%, rgba(44,107,255,.16), transparent 70%),
+    linear-gradient(rgba(120,150,220,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120,150,220,.06) 1px, transparent 1px);
+  background-size: auto, 36px 36px, 36px 36px;
+  background-position: center top, center top, center top;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  padding-block: 32px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+*, *::before, *::after { box-sizing: border-box; }
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  min-width: 0;
+  background: var(--card);
+  border: 1px solid var(--edge);
+  border-radius: 32px;
+  padding: 40px 28px 24px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar {
+  width: 104px;
+  height: 104px;
+  border-radius: 28px;
+  border: 1.5px solid rgba(44,107,255,.8);
+  background: linear-gradient(145deg, #162448, #0d1426);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 0 5px rgba(44,107,255,.10), 0 0 38px rgba(44,107,255,.45), 0 0 90px rgba(44,107,255,.2);
+  animation: glow 4s ease-in-out infinite;
+  overflow: hidden;
+}
+.avatar svg { width: 72px; height: 72px; }
+@keyframes glow {
+  50% { box-shadow: 0 0 0 5px rgba(44,107,255,.14), 0 0 48px rgba(44,107,255,.6), 0 0 100px rgba(44,107,255,.28); }
+}
+
+.badge {
+  margin-top: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 14px;
+  border: 1px solid var(--edge);
+  border-radius: 999px;
+  background: rgba(255,255,255,.03);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #b9c6e6;
+}
+.badge i {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--blue);
+  box-shadow: 0 0 10px var(--blue);
+}
+
+h1 {
+  margin: 22px 0 0;
+  font-size: clamp(34px, 10vw, 44px);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+h1 em {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  font-size: 1.12em;
+  padding-right: .08em;
+  background: linear-gradient(95deg, #4d86ff 0%, var(--cyan) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.sub {
+  margin: 16px 0 0;
+  max-width: 34ch;
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.cta {
+  margin-top: 28px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 17px 20px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #3b78ff, #2159f0);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16.5px;
+  text-decoration: none;
+  box-shadow: 0 12px 32px rgba(44,107,255,.38), inset 0 1px 0 rgba(255,255,255,.22);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.cta svg { width: 22px; height: 22px; fill: currentColor; }
+.cta:hover { transform: translateY(-1px); box-shadow: 0 16px 38px rgba(44,107,255,.5), inset 0 1px 0 rgba(255,255,255,.22); }
+.cta:active { transform: translateY(0); }
+
+.stats {
+  margin: 30px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--edge);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.stat { padding: 0 6px; }
+.stat + .stat { border-left: 1px solid var(--edge); }
+.stat b {
+  display: block;
+  font-size: clamp(22px, 6.5vw, 26px);
+  font-weight: 700;
+  letter-spacing: -.02em;
+  font-variant-numeric: tabular-nums;
+}
+.stat span {
+  display: block;
+  margin-top: 2px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+footer { margin-top: 28px; width: 100%; }
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.links a {
+  color: #a9b6d6;
+  font-size: 13px;
+  text-decoration: none;
+}
+.links a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+.fine {
+  margin: 16px auto 0;
+  max-width: 38ch;
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: #66738f;
+}
+
+a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 8px; }
+@media (prefers-reduced-motion: reduce) {
+  .avatar { animation: none; }
+  .cta { transition: none; }
+}
+@media (max-width: 380px) {
+  .card { padding: 32px 20px 20px; border-radius: 28px; }
+}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="avatar" role="img" aria-label="FLIPDEMON robot profile image">
+    <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+      <line x1="32" y1="8" x2="32" y2="15" stroke="#9bbcff" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="32" cy="6.5" r="3.5" fill="#3de3d2"/>
+      <rect x="6" y="28" width="6" height="14" rx="3" fill="#2c6bff"/>
+      <rect x="52" y="28" width="6" height="14" rx="3" fill="#2c6bff"/>
+      <rect x="11" y="15" width="42" height="36" rx="12" fill="#1b2d5c" stroke="#6c9bff" stroke-width="2"/>
+      <rect x="17" y="24" width="30" height="14" rx="7" fill="#0b0f19" stroke="#2c6bff" stroke-width="1.5"/>
+      <circle cx="26" cy="31" r="3.6" fill="#3de3d2"/>
+      <circle cx="38" cy="31" r="3.6" fill="#3de3d2"/>
+      <circle cx="27" cy="30" r="1.1" fill="#e9fffc"/>
+      <circle cx="39" cy="30" r="1.1" fill="#e9fffc"/>
+      <g stroke="#9bbcff" stroke-width="2" stroke-linecap="round">
+        <line x1="25" y1="44" x2="25" y2="47"/>
+        <line x1="30" y1="44" x2="30" y2="47"/>
+        <line x1="35" y1="44" x2="35" y2="47"/>
+        <line x1="40" y1="44" x2="40" y2="47"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="badge"><i aria-hidden="true"></i>FLIPDEMON HFT BOT</div>
+
+  <h1>Join our <em>free Community</em></h1>
+
+  <p class="sub">Check how our FLIPDEMON HFT BOT is working and making things easier and growing your portfolio in milliseconds.</p>
+
+  <a id="join-btn" class="cta" href="https://t.me/+_eOwqGns92xmMzQ1" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+    Join the Community
+  </a>
+
+  <div class="stats">
+    <div class="stat"><b>80K+</b><span>Members</span></div>
+    <div class="stat"><b>Daily</b><span>Analysis</span></div>
+    <div class="stat"><b>Free</b><span>To join</span></div>
+  </div>
+
+  <footer>
+    <ul class="links">
+      <li><a href="#privacy">Privacy Policy</a></li>
+      <li><a href="#terms">Terms of Use</a></li>
+      <li><a href="#disclaimer">Disclaimer</a></li>
+    </ul>
+    <p class="fine">Educational content only. Nothing here is financial advice. Trading involves risk, and past performance does not guarantee future results.</p>
+  </footer>
+</main>
+
+<script>
+  // Tell Meta a lead happened when the Join button is tapped.
+  document.getElementById('join-btn').addEventListener('click', function () {
+    try { if (window.fbq) fbq('track', 'Lead'); } catch (e) {}
+  });
+</script>
+</body>
+</html>
